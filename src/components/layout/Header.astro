@@ -7,18 +7,13 @@ const links = [
   },
   {
     ref: '02',
-    name: 'Sobre nosotros',
-    href: '/about',
+    name: 'Sobre mi',
+    href: '/#about',
   },
   {
     ref: '03',
-    name: 'Pagina 3',
-    href: '/pricing',
-  },
-  {
-    ref: '04',
     name: 'Contacto',
-    href: '/contact',
+    href: '/#contact',
   },
 ];
 
@@ -56,7 +51,7 @@ const socials = [
         <span class="sr-only">Sebastián Castillo - Logo</span>
         <img
           class="h-3/4 md:h-1/3"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          :src="$store.theme.isDark ? '/assets/logo-inverted.png' : '/assets/logo.png'"
           alt="Sebastian Castillo - Psicoterapia y Psicología del deporte - logo"
         />
       </a>

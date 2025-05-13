@@ -16,7 +16,7 @@ const bottomLinks = [
     ],
   },
   {
-    header: 'Company',
+    header: 'Mapa del sitio',
     links: [
       {
         name: 'Inicio',
@@ -24,18 +24,14 @@ const bottomLinks = [
         isExternal: false,
       },
       {
-        name: 'Sobre nosotros',
-        href: '/about',
+        name: 'Sobre mi',
+        href: '/#about',
         isExternal: false,
       },
-      {
-        name: 'Page 1',
-        href: '/pricing',
-        isExternal: false,
-      },
+
       {
         name: 'Contacto',
-        href: '/contact',
+        href: '/#contact',
         isExternal: false,
       },
     ],
@@ -52,10 +48,9 @@ const bottomLinks = [
     <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
       <div class="flex max-w-sm flex-col gap-4 items-start">
         <img
-          class="flex items-center h-3/4 md:w-64"
-          width="65"
+          class="flex items-center md:w-64"
           height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          :src="$store.theme.isDark ? '/assets/logo-inverted.png' : '/assets/logo.png'"
           alt="Sebastián Castillo - Logo"
         /> 
         <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
