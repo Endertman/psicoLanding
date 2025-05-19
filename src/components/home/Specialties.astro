@@ -3,19 +3,19 @@ const psicologiaClinica = [
   {
     step: "1",
     name: "Psicoterapia y Psicodiagnostico",
-    image: 'assets/imgs/src01.png',
+    image: './public/assets/1.webp',
     description: "Psicoterapia para adultos, adolescentes y personas mayores. Evaluación y acompañamiento especializado",
   },
   {
     step: "2",
     name: "Piscología Bariátrica y Deportiva",
-    image: 'assets/imgs/src03.png',
+    image: './public/assets/2.webp',
     description: "Evaluación para cirugía bariátrica con apoyo postoperatorio. Preparación de deportistas y equipos deportivos.",
   },
   {
     step: "3",
     name: "Charlas y Talleres para Empresas",
-    image: 'assets/imgs/src03.png',
+    image: './public/assets/3.webp',
     description: "Charlas y talleres online o presenciales para empresas sobre Salud Mental, Clima Laboral y temas contingentes.",
   },
 ];
@@ -32,11 +32,11 @@ const psicologiaClinica = [
             <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-8 rounded-3xl px-6 py-8">
               <p class="text-sm">{item.step}</p>
               <div class="flex flex-col gap-4">
-              {/* <img
+              <img
                 src={item.image}
                 alt={item.name}
                 class="w-full h-48 object-cover rounded-xl"
-                /> */}
+                /> 
               </div>
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl font-medium">{item.name}</h3>
