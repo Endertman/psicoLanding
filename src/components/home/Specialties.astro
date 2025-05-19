@@ -1,25 +1,22 @@
 ---
-const especialidades = [
+const psicologiaClinica = [
   {
-    step: '1',
-    name: 'Psicoterapia y Psicodiagnóstico',
-    image: 'assets/img/src01.png',
-    description:
-      'Psicoterapia para adultos, adolescentes y personas mayores. Evaluación y acompañamiento especializado.',
+    step: "1",
+    name: "Psicoterapia y Psicodiagnostico",
+    image: './public/assets/1.webp',
+    description: "Psicoterapia para adultos, adolescentes y personas mayores. Evaluación y acompañamiento especializado",
   },
   {
-    step: '2',
-    name: 'Psicología Bariátrica y Deportiva',
-    image: 'assets/imgs/src02.png',
-    description:
-      'Evaluación para cirugía bariátrica con apoyo postoperatorio. Preparación de deportistas y equipos deportivos.',
+    step: "2",
+    name: "Piscología Bariátrica y Deportiva",
+    image: './public/assets/2.webp',
+    description: "Evaluación para cirugía bariátrica con apoyo postoperatorio. Preparación de deportistas y equipos deportivos.",
   },
   {
-    step: '3',
-    name: 'Charlas y Talleres',
-    image: 'assets/imgs/src03.png',
-    description:
-      'Charlas online o presenciales para empresas sobre Salud Mental, clima laboral y temas contingentes.',
+    step: "3",
+    name: "Charlas y Talleres para Empresas",
+    image: './public/assets/3.webp',
+    description: "Charlas y talleres online o presenciales para empresas sobre Salud Mental, Clima Laboral y temas contingentes.",
   },
 ];
 ---
@@ -27,23 +24,24 @@ const especialidades = [
 <section id="especialidades" class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Especialidades</h2>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Áreas de Atención</h2>
       <div class="grid gap-8 lg:grid-cols-3">
+        {/*Seccion psicologiaClinica*/}
         {
-          especialidades.map((especialidad) => (
+          psicologiaClinica.map((item) => (
             <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-8 rounded-3xl px-6 py-8">
-              <p class="text-sm">{especialidad.step}</p>
+              <p class="text-sm">{item.step}</p>
               <div class="flex flex-col gap-4">
-                <img
-                src={especialidad.image}
-                alt={especialidad.name}
+              <img
+                src={item.image}
+                alt={item.name}
                 class="w-full h-48 object-cover rounded-xl"
-                />
+                /> 
               </div>
               <div class="flex flex-col gap-4">
-                <h3 class="text-xl font-medium">{especialidad.name}</h3>
+                <h3 class="text-xl font-medium">{item.name}</h3>
                 <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-                  {especialidad.description}
+                  {item.description}
                 </p>
               </div>
             </div>
