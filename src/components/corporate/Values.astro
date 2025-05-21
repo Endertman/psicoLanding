@@ -2,45 +2,34 @@
 const values = [
   [
     {
-      ref: '01',
-      name: 'Objetivos / Valores i+1',
+      ref: '',
+      name: 'Objetivo',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    },
-    {
-      ref: '02',
-      name: 'Objetivos / Valores i+1',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        ' Fomentar un entorno laboral saludable que potencie el bienestar emocional de los colaboradores. Nos comprometemos a reducir el estrés y mejorar la calidad de vida a través de charlas y estrategias prácticas, alineadas con la Ley N° 21.643 (Ley Karin).',
     },
   ],
   [
     {
-      ref: '03',
-      name: 'Objetivos / Valores i+1',
+      ref: '',
+      name: 'Propósito',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'Promover la educación en salud mental como base para la prevención. Facilitamos herramientas que permitan a los equipos identificar señales de alerta y acceder a apoyo profesional, fortaleciendo la resiliencia organizacional.',
     },
-    {
-      ref: '04',
-      name: 'Objetivos / Valores i+1',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    },
-  ],
+  ]
+ 
 ];
 ---
 
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-8 lg:gap-12">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Objetivos/ Valores / metas</h2>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">¿Qué buscamos?</h2>
       <div class="grid gap-8 lg:grid-cols-2">
         {
           values.map((column, index) => (
             <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
               {column.map((value) => (
-                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col-hor gap-12 rounded-3xl px-6 py-8">
                   <p class="text-sm">{value.ref}</p>
                   <div class="flex flex-col gap-4">
                     <h3 class="text-xl font-medium">{value.name}</h3>
