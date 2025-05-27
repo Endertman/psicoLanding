@@ -1,21 +1,14 @@
 ---
 const stats = [
   {
-    name: 'Tiempo',
-    value: 'x',
+    name: 'Abordaje expositivo y conceptual',
+    description: '$339.000 (bruto)',
   },
   {
-    name: 'Colaboradores',
-    value: 'x',
+    name: 'Jornada completa con estrategias para equipos',
+    description: '$679,000 (bruto)',
   },
-  {
-    name: 'Proyectos',
-    value: '',
-  },
-  {
-    name: 'etc',
-    value: 'x',
-  },
+
 ];
 ---
 
@@ -26,35 +19,32 @@ const stats = [
         class="mx-auto h-auto w-full max-w-xl rounded-3xl"
         width="576"
         height="864"
-        src="/assets/about.webp"
+        src="/assets/corporateimg.webp"
         alt="Our experts working together"
       />
+
+      
+
+
       <div class="flex flex-col gap-10">
         <!-- Mission description -->
         <div class="space-y-8 sm:space-y-12">
-          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Misión</h2>
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">¿Por qué es importante trabajar la Salud Mental en una empresa?</h2>
           <div class="space-y-6">
             <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
-              consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-              Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-              senectus vitae.
+              La salud mental es clave para potenciar las cualidades de tus colaboradores y el éxito de tu organización. Reduce costos por licencias médicas, mejora el clima laboral, y fomenta la motivación, orientación a metas, concentración y regulación emocional.
+              Con la ley N°21.643 (Ley Karin) en vigor, es más importante que nunca abordar este tema.
             </p>
             <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem
-              nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet
-              quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis
-              elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
-              donec laoreet quam urna.
+              Un entorno laboral saludable no solo beneficia a los empleados, sino que también impulsa la productividad y la innovación dentro de la empresa. Al priorizar la salud mental, reduces el ausentismo, disminuyes la rotación de personal y fortaleces el compromiso de tu equipo. Además, promueves una cultura de bienestar que puede convertirse en un diferenciador clave en el mercado, atrayendo talento y mejorando la percepción de tu marca.
             </p>
             <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies.
-              Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum
-              consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-              fermentum lacus in. Viverra.
+              La educación y la comunicación abierta sobre salud mental son fundamentales para prevenir problemas mayores. Hablar de estos temas de manera proactiva permite identificar señales de alerta temprano, facilita el acceso a apoyo profesional y fomenta una dinámica de confianza entre los colaboradores y la organización. Esto no solo ayuda a gestionar el estrés y el malestar emocional, sino que también empodera a tu equipo para enfrentar desafíos con mayor resiliencia.
             </p>
           </div>
         </div>
+      
+     
 
         <!-- Stats -->
         <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -62,7 +52,7 @@ const stats = [
             stats.map((stat) => (
               <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
                 <dt class="text-base">{stat.name}</dt>
-                <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+                <dd class="text-2xl font-medium tracking-tight">{stat.description}</dd>
               </div>
             ))
           }
