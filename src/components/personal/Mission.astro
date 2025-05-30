@@ -1,20 +1,26 @@
 ---
+import { deselectScripts } from "astro/virtual-modules/transitions-swap-functions.js";
+
 const stats = [
   {
-    name: 'Tiempo',
-    value: 'x',
+    name: 'Presencial',
+    value: '$45.000',
+    description: 'Atención en consulta particular (valor x sesión).',
   },
   {
-    name: 'Colaboradores',
-    value: 'x',
+    name: 'Online',
+    value: '$40.000',
+    description: 'Disponible para adultos y adultos mayores.',
   },
   {
-    name: 'Proyectos',
-    value: '',
+    name: 'Adolescentes',
+    value: '$45.000',
+    description: 'Solo atención presencial. Individual y adaptado a su etapa.',
   },
   {
-    name: 'etc',
-    value: 'x',
+    name: 'Usuarios Fonasa / Isapre',
+    value: 'Atención Clínica U de Chile - Quilín',
+    description: 'Agenda en Red Clínica',
   },
 ];
 ---
@@ -55,6 +61,7 @@ const stats = [
               <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
                 <dt class="text-base">{stat.name}</dt>
                 <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+                <dd class="text-base">{stat.description}</dd>
               </div>
             ))
           }
