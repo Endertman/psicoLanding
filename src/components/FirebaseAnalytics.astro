@@ -1,0 +1,22 @@
+---
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBLox9h6xtwWFPPFX2CZDCTlHahjZm6w1Y",
+  authDomain: "psicolandingsebastian.firebaseapp.com",
+  projectId: "psicolandingsebastian",
+  storageBucket: "psicolandingsebastian.firebasestorage.app",
+  messagingSenderId: "766071458961",
+  appId: "1:766071458961:web:2afc8455db166cda758330",
+  measurementId: "G-1MBYRTH8ZK"
+};
+---
+
+<script define:vars={{ firebaseConfig }}>
+  // Import Firebase functions
+  import { initializeApp } from "firebase/app";
+  import { getAnalytics } from "firebase/analytics";
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> 

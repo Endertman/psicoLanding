@@ -4,6 +4,8 @@ import '@fontsource/inter/latin-500.css';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
+import FirebaseAnalytics from '../components/FirebaseAnalytics.astro';
+
 interface Props {
   description: string;
   title: string;
@@ -54,6 +56,7 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
     <meta name="keywords" content="psicólogo, psicoterapia, salud mental, psicología deportiva, Santiago, Chile" />
     
     <ViewTransitions />
+    <FirebaseAnalytics />
   </head>
   <body class="bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-200 antialiased transition">
     <Header />
